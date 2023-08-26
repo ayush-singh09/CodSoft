@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: general sans;
+}
+.skills-main{
+    width: 100%;
+    padding: 100px;
+    background-image: linear-gradient(to right ,rgb(13, 106, 212), rgb(181, 193, 8));
+    height: 100%;
+}
+#main{
+    padding: 40px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.71);
+}
+.line{
+    margin: 50px 0;
+}
+.heading img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.education h2{
+    margin-bottom: 20px;
+}
+.education a{
+    color: green;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.354);
+    color: black;
+    padding: 20px;margin: 0 auto;
+    border-radius: 10px;
+}
+.container h1{
+    margin-bottom: 20px;
+}
+.project-main{
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+.contact-main{
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+a{
+    color: rgba(255, 255, 255, 0.71);
+}
+@media (max-width:600px) {
+    #main{
+        padding: 15px;
+    }
+    .heading img{
+        width: 100px;
+    }
+    .heading{
+        margin-top: 25px;
+    }
+    .skills-main{
+        padding: 20px;
+    }
+    .container{
+        width: 90%;
+    }
+    .container h1{
+        font-size: 7vw;
+    }
+    .container h3{
+        font-size: 4vw;
+    }
+    .project-main{
+        padding: 20px;
+        padding-top: 60px;
+    }
+    .project-main h2{
+        font-size: 6vw;
+    }
+}
