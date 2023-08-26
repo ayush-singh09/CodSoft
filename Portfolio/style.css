@@ -176,13 +176,16 @@ ul{
         padding: 30px;
     }
     .intro h1{
-        font-size: 12vw;
+        font-size: 13.5vw;
     }
     .chotiheading h4{
         font-size: 3vw;
     }
     .freelance h3{
         font-size: 3vw;
+    }
+    .linked{
+        bottom: 50px;
     }
     .linked a{
         font-size: 4vw;
