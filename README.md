@@ -1,2 +1,0 @@
-# CodSoft
-CodSoft Internship Repositpry
