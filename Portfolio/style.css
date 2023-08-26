@@ -166,6 +166,9 @@ ul{
 }
 
 @media (max-width:600px) {
+    #minicircle{
+        display: none;
+    }
     .nav h1{
         font-size: 4vw;
     }
