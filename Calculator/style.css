@@ -1,0 +1,83 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+.calculator-box{
+	margin-top: 50px;
+	width: 400px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 20px;
+}
+.display{
+	width: 100%;
+	height: 100px;
+	background: transparent;
+	border: 3px solid white;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.display h2{
+	color: white;
+	margin-right: 20px;
+}
+.oper{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+button{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 20px 0;
+	background-color: black;
+	color: aliceblue;
+	font-size: 20px;
+	cursor: pointer;
+}
+button.enter{
+	width: 100%;
+	height: 60px;
+	border-radius: 20px;
+	border: 2px solid white;
+	margin: 20px 30px;
+	background-color: black;
+	color: aliceblue;
+	font-size: 20px;
+	cursor: pointer;
+}
+button:hover{
+	background-color: rgba(255, 255, 255, 0.304);
+	color: black;
+}
+
+@media (max-width:600px) {
+	.calculator-box{
+		
+		width:  60vw;
+	}
+	.display{
+		height: 70px;
+		margin-bottom: 10px;
+		background-color: white;
+	}
+	.display h2{
+		color: black;
+	}
+	button{
+		margin: 10px 0;
+	}
+	button.enter{
+		margin: 10px 10px;
+	}
+}
