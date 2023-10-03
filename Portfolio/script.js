@@ -52,15 +52,33 @@ function firstPageAnimation(){
         ease: Expo.easeInOut
     })
 }
-function CircleMouseFollower(){
+function CircleMouseFollower(xscale,yscale){
     window.addEventListener("mousemove",function(dets){
         document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px,${dets.clientY}px) scale(${xscale},${yscale})`;
     })
 }
 
+function menuScreen(){
+    var menu = document.querySelector(".menu");
+    var closeMenuButton = document.querySelector('.close-button');
+    var main = document.querySelector("#main");
 
-mouseskew()
+    menu.addEventListener("click",function(){
+        gsap.to(".menu-screen",{
+            right : "0",
+            display : "flex"
+        })
+    })
 
+    closeMenuButton.addEventListener("click",function(){
+        gsap.to(".menu-screen",{
+            right : "-100%",
+            display:"none"
+        })
+    })
+}
+
+menuScreen();
+mouseskew();
 firstPageAnimation();
-
 CircleMouseFollower();
